@@ -124,7 +124,7 @@ namespace BroBlametor.Controllers
                     ? new Grade
                     {
                         Id = row.GradeOpinion.Value,
-                        Name = GradeNumberReverseMap[row.GradeOpinion.Value]
+                        Name = GradeNumberReverseMap.ContainsKey(row.GradeOpinion.Value) ? GradeNumberReverseMap[row.GradeOpinion.Value]: "n/a"
                     }
                     : null;
             }
