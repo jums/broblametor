@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@types/luxon": "^1.4.1",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "bootstrap": "^4.1.3",
     "chart.js": "^2.7.3",
     "filepond": "^3.7.2",
