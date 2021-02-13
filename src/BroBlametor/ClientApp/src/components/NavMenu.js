@@ -6,27 +6,32 @@ import './NavMenu.css';
 export class NavMenu extends Component {
   static displayName = NavMenu.name;
 
-  constructor (props) {
+  constructor(props) {
     super(props);
 
     this.toggleNavbar = this.toggleNavbar.bind(this);
     this.state = {
-      collapsed: true
+      collapsed: true,
     };
   }
 
-  toggleNavbar () {
+  toggleNavbar() {
     this.setState({
-      collapsed: !this.state.collapsed
+      collapsed: !this.state.collapsed,
     });
   }
 
-  render () {
+  render() {
     return (
       <header>
-        <Navbar className="navbar-expand-sm navbar-toggleable-sm ng-white border-bottom box-shadow mb-3" light>
+        <Navbar className='navbar-expand-sm navbar-toggleable-sm ng-white border-bottom box-shadow mb-3' light>
           <Container>
-            <NavbarBrand tag={Link} to="/">BroBlametor</NavbarBrand>
+            <NavbarBrand tag={Link} to='/'>
+              BroBlametor{' '}
+              <sup>
+                <small>13.2.2021</small>
+              </sup>
+            </NavbarBrand>
           </Container>
         </Navbar>
       </header>
