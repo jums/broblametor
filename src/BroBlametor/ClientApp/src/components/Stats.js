@@ -4,7 +4,7 @@ import ScoreHistory from './ScoreHistory';
 const Grades = ({ grades, ticks }) => {
   const years = ticks
     .map((t) => t.year)
-    .filter((value, index, self) => self.indexOf(value) == index)
+    .filter((value, index, self) => self.indexOf(value) === index)
     .filter((year) => year >= 2017)
     .sort();
 

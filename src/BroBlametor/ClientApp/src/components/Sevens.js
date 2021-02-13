@@ -6,7 +6,7 @@ import { getDateRange } from '../helpers/dateHelper';
 
 const grades = ['7a', '7a+', '7b', '7b+', '7c', '7c+'];
 const sevenA = 11;
-const eightA = 17;
+// const eightA = 17;
 
 const getQuartalSevens = (ticks) => {
   const { starts, ends } = getDateRange(ticks);
